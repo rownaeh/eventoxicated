@@ -5,19 +5,17 @@
    		<link rel="stylesheet" type="text/css" href="layout.css" />
 	 
 	    <script type="text/javascript" src = "js/tabmenu.js"></script>
-   
-    
-	
-		<script type="text/javascript" src="jquery-ui-1.7.1.custom.min.js"></script>
-		<script type="text/javascript" src="daterangepicker.jQuery.js"></script>
+		<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
+		<script type="text/javascript" src="js/daterangepicker.jQuery.js"></script>
 		<link rel="stylesheet" href="css/ui.daterangepicker.css" type="text/css" />
 		<link rel="stylesheet" href="css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" title="ui-theme" />
 	
 		
 			<script type="text/javascript">	
 				$(function(){
-				 $(’#rangeA’).daterangepicker({arrows:true}); 
-				 });
+				  $('#picker').daterangepicker({arrows:true}); 
+				});
 			</script>
 
 			<!-- from here down, demo-related styles and scripts --> 
@@ -29,7 +27,7 @@
 </head>  
 <body> 
 		
-		<input type="text" value="4/13/99" id="rangeA" />			
+			
 
 
 <?php
@@ -45,7 +43,7 @@
                 
                 <label for = "date">Event Date:</label> <br />
                 <br />
-            <input type="text" />
+            <input type="text" id="picker" />		
 				
 				<br />
                 <label for = "time">Event Time:  </label> <br />
